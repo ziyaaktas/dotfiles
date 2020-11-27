@@ -7,6 +7,7 @@ brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade
+brew tap mongodb/brew
 
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
@@ -43,7 +44,6 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install php
 brew install gmp
 
 # Install font tools.
@@ -96,6 +96,29 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+brew install kubectl
+brew install minikube
+brew install tmux
+brew install mongodb-database-tools
+brew install tig
+
+# Install developer tools
+brew install go
+brew install kubernetes-cli
+
+#cask stuff
+brew update                           # Fetch latest version of homebrew and formula.
+brew tap caskroom/cask                # Tap the Caskroom/Cask repository from Github using HTTPS.
+brew tap homebrew/cask-fontsbrew tap homebrew/cask-fonts
+brew cask install font-fira-code
+brew cask install visual-studio-code  # Install the given cask.
+brew cask install postman
+brew cask install dropbox
+brew cask install rust
+brew cask install stretchly
+brew cask install zettlr
+brew cask install robo-3t
+brew cask install skype
 
 # Remove outdated versions from the cellar.
 brew cleanup
